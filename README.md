@@ -1,6 +1,7 @@
 # Autocomplete Country Lookup
 
-An autocomplete component with an API of countries information as usage example
+An autocomplete component with an API of countries information as usage example.
+The countries list comes from this free service API: https://restcountries.com/
 
 ## Getting Started
 
