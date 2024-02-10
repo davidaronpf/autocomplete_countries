@@ -23,16 +23,19 @@ Before you begin, ensure you have met the following requirements:
 
   ```bash
   cd your-project
+  ```
 
 3. Install dependencies:
 
   ```bash
   npm install
+  ```
 
 ### Running the Application
 
   ```bash
   npm start
+  ```
 
 ### Built With
 
