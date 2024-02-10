@@ -1,6 +1,7 @@
 # Autocomplete Country Lookup
 
 An autocomplete component with an API of countries information as usage example.
+
 The countries list comes from this free service API: https://restcountries.com/
 
 ## Getting Started
@@ -19,6 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/your-username/your-project.git
+   ```
 
 2. Change into the project directory:
 
