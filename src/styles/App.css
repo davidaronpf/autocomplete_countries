@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.Back-space {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  animation: Back-space-fade infinite 10s linear;
+}
+
+@keyframes Back-space-fade {
+  0% {
+    filter: saturate(0);
+  }
+  50% {
+    filter: saturate(10);
+  }
+  100% {
+    filter: saturate(0);
+  }
+}
+
+.Earth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Earth-container ul {
+  margin-bottom: 150px;
+  padding-right: 2px;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-align: left;
+  position: fixed;
+  left: 57%;
+}
+
+.Earth-container ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.Earth-container ul li span {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#3514f0, #00db75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: rgb(102, 102, 102);
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  position: relative;
+}
+
+.Country-header {
+  position: absolute;
+}
+
+.Country-header img {
+  border: 1px solid white;
+  height: 10vmin;
+}
+
+.Country-header p {
+  font-size: 2rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#1c0a85, #00914d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Earth-container ul {
+    margin-bottom: 0;
+    position: relative;
+    left: 0;
+  }
+
+  .Country-header {
+    position: relative;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 365s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-repeat: repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+p {
+  margin-top: 0;
+}
